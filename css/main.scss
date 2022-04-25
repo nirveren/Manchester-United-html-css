@@ -550,12 +550,11 @@ body {
 
 @media (max-width: 414px ) {
   .wrapper {
-    max-width: 414px;
+    min-width: 414px;
     overflow: hidden;
 }
 
 .container {
-    margin: 0 auto;
     width: 414px;
 }
 .hero {
@@ -672,67 +671,9 @@ body {
 }
 }
 
-@media (max-width: 390px) {
-  .wrapper {
-    max-width: 390px;
-    overflow: hidden;
-}
 
-.container {
-    width: 390px;
-}
-.hero {
-  max-height: 665px;
-}
 
-.menu__btn {
-  left: 10px;
-}
 
-.player__photo {
-  width: 215px;
-
-}
-
-.ronaldo__video {
-  margin-top: 7px;
-  border-radius: 10px;
-  width: 170px;
-  height: 120px;
-  margin-bottom: 15px;
-}
-
-.table {
-	width: 40%;  
-}
-
-.schedule__item {
-  padding: 5px;
- box-shadow: 0px 7px 7px black;
-}
-
-.schedule__logos-team{
-  width: 130px;
-}
-}
-
-@media (max-width: 768px) {
-  .wrapper {
-    max-width: 768px;
-    overflow: hidden;
-}
-
-.fred {
-  display: none;
-}
-.nefred {
-  display: none;
-}
-.container {
-  width: 768px;
-}
-
-}
 
 
 
