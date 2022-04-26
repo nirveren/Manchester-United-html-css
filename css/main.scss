@@ -671,7 +671,7 @@ body {
  box-shadow: 0px 7px 7px black;
 }
 
-.schedule__logos-team{
+.schedule__logos-team {
   width: 130px;
 }
 }
@@ -710,7 +710,7 @@ body {
 }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .wrapper {
     min-width: 900px;
 }
