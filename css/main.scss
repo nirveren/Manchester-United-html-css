@@ -561,6 +561,15 @@ body {
   max-height: 680px;
 }
 
+.header__item {
+  margin-left: 30px;
+}
+
+
+.header__item:nth-child(2) {
+  margin-right: 30px;
+}
+
 .logo__pic {
   width: 80px;
   height: 80px;
@@ -581,7 +590,6 @@ body {
 
 .hamburger-menu {
   display: block;
-  top: 40px;
 }
 
 .fred {
@@ -632,7 +640,7 @@ body {
 }
 
 .ronaldo__video {
-  margin-top: 7px;
+  margin-top: 5px;
   border-radius: 10px;
   width: 180px;
   height: 150px;
@@ -668,6 +676,42 @@ body {
   width: 130px;
 }
 }
+
+@media (max-width: 390px) {
+  .wrapper {
+    min-width: 390px;
+    overflow: hidden;
+}
+
+.container {
+    width: 390px;
+}
+
+.ronaldo__video {
+  margin-top: 5px;
+  border-radius: 10px;
+  width: 170px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    min-width: 375px;
+    overflow: hidden;
+}
+
+.container {
+    width: 375px;
+}
+
+.menu__btn {
+  left: 35px;
+}
+
+}
+
 
 
 
