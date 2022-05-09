@@ -1,271 +1,156 @@
 @import "reset.scss";
+@import "foooter.scss";
 
 body {
-    font-family: 'Lato', sans-serif;
-    background: url('../img/bg/look.com.ua-35320.jpg') center;
+  font-family: 'Lato', sans-serif;
+  background: url('../img/bg/look.com.ua-35320.jpg') center;
+  min-width: 1400px;
 }
 
-
-.wrapper {
-    min-width: 1350px;
-    margin: 0 auto;
-    width: 100%;
-}
 
 .container {
-    margin: 0 auto;
-    width: 900px;
-}
-
-// burger menu 
-
-.hamburger-menu {
-  display: none;
-}
-
-#menu__toggle {
-  opacity: 0;
-}
-
-.menu__btn {
-  display: flex; 
-  align-items: center;  
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
+  margin: 0 auto;
+  width: 900px;
   z-index: 1;
 }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-
-  background-color: #fff;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
-
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  text-align: center;
-  background-color: #000;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-}
-
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
-
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
-}
-
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  transition-duration: .25s;
-}
-.menu__box {
-  transition-duration: .25s;
-}
-.menu__item {
-  transition-duration: .25s;
-}
-
-
-
-//hero/header
-
 .hero {
-    height: 100vh;
-    background: url("../img/bg/bg1.jpg") center center/cover no-repeat;
-    min-height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  height: 100vh;
+  background: url("../img/bg/bg1.jpg") center center/cover;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 
-  
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-  }
-  
-  .logo__pic {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .header__item {
-    margin-left: 50px;
-  }
-  
-  .header__item:first-child {
-    margin-left: 0px;
-  }
-  
-  .header__item:nth-child(2) {
-    margin-right: 50px;
-  }
-  
-  .icon {
-    display: flex;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    opacity: 0.3;
-  }
-  
-  .icon:hover {
-    opacity: 1;
-  }
 
-  
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
 
-  .nav__inner {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-     
-  }
+.logo__pic {
+  width: 150px;
+  height: 150px;
+}
 
-  .nav__item {
-      text-transform: uppercase;
-      margin-left: 50px; 
-  }
+.header__item {
+  margin-left: 50px;
+}
 
-  .nav__item:first-child{
-      margin-left: 0px;
-  }
+.header__item:first-child {
+  margin-left: 0px;
+}
 
-  .nav__link {
-      text-decoration: none;
-      font-size: 20px;
-      color: #fff;
-      background: #B22222;
-      padding: 5px;
-      border-radius: 10px;
-      transition: 0.4s;
-  }
+.header__item:nth-child(2) {
+  margin-right: 50px;
+}
 
-  .nav__link:hover {
-      background: #fff;
-      color: #B22222;
-  }
+.icon {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0.3;
+}
 
-  // main
-  
-  .main {
-    display: grid;
-    grid-template-areas:"fred match nefred"
-                        "fred player nefred"
-                        "fred stat nefred"
-                        "frea sched nefred";
+.icon:hover {
+  opacity: 1;
+}
 
-    grid-template-rows: 0fr;
-  }
-  .fred {
-    grid-area: fred;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 220px;
-    height: 700px;
-  }
-  
-  .nefred {
-    grid-area: nefred;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 220px;
-    height: 700px;
-  }
+.nav__inner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 
-  .match {
-    grid-area: match;
-    display: flex;
-    justify-content: center;
-  }
+}
 
- .match__inner {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
-   background: url('../img/content/skysports-old-trafford-manchester-united_5461096.jpeg') center center / cover no-repeat;
- }
+.nav__item {
+  text-transform: uppercase;
+  margin-left: 50px;
+}
 
- .match__content {
-   display: flex;
-   text-align: center;
-   margin-bottom: 50px;
-    
- }
+.nav__item:first-child {
+  margin-left: 0px;
+}
 
- .match__date {
-   margin-top: 70px;
-   color: #F5F5DC;
-   font-size: 30px;
-   font-weight: bold;
-   margin-bottom: 10px;
- }
+.nav__link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  background: #B22222;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
 
- .match__type {
-   color: #F5F5DC;
-   font-size: 20px;
-   font-weight: bold;
-   margin-bottom: 50px;
- }
+.nav__link:hover {
+  background: #fff;
+  color: #B22222;
+}
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fred {
+  position: sticky;
+  top: 0;
+  left: 0px;
+  width: 250px;
+  height: 750px;
+}
+
+.nefred {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 750px;
+}
+
+.match {
+  display: flex;
+  justify-content: center;
+}
+
+.match__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: url('../img/content/skysports-old-trafford-manchester-united_5461096.jpeg') center center / cover no-repeat;
+}
+
+.match__content {
+  display: flex;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.match__date {
+  margin-top: 70px;
+  color: #F5F5DC;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.match__type {
+  color: #F5F5DC;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
 
 .logo__match {
   width: 150px;
@@ -297,15 +182,15 @@ body {
   top: 370px;
 }
 
- .read__more-link {
-    padding: 5px;
-    background: #B22222;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    box-shadow: 5px 5px 5px 5px #000;
-    transition: 0.4s;
- }
+.read__more-link {
+  padding: 5px;
+  background: #B22222;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 5px 5px 5px 5px #000;
+  transition: 0.4s;
+}
 
 .read__more-link:hover {
   background: #fff;
@@ -313,7 +198,6 @@ body {
 }
 
 .player {
-  grid-area: player;
   z-index: 1;
 }
 
@@ -324,7 +208,7 @@ body {
 
 .player__inner {
   display: flex;
-  background: linear-gradient(#FFFAFA, #808080 );
+  background: linear-gradient(#FFFAFA, #808080);
   color: #432b2b;
 }
 
@@ -367,7 +251,6 @@ body {
 }
 
 .statistick {
-  grid-area: stat;
   z-index: 1;
 }
 
@@ -379,42 +262,50 @@ body {
 
 
 .table {
-	width: 90%;
-	border: none;
-	margin-bottom: 20px;
-  
+  width: 90%;
+  border: none;
+  margin-bottom: 20px;
+
 }
+
 .table thead th {
-	font-weight: bold;
-	border: none;
-	padding: 10px 15px;
-	background: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  background: black;
   color: #fff;
-	font-size: 25px;
+  font-size: 25px;
   text-align: center;
 }
+
 .table thead tr th:first-child {
-	border-radius: 8px 0 0 8px;
+  border-radius: 8px 0 0 8px;
 }
+
 .table thead tr th:last-child {
-	border-radius: 0 8px 8px 0;
+  border-radius: 0 8px 8px 0;
 }
+
 .table tbody td {
-	border: none;
-	padding: 10px 15px;
-	font-size: 20px;
-	vertical-align: top;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  vertical-align: top;
   text-align: center;
 }
+
 .table tbody tr:nth-child(even) {
-	background: #808080;
+  background: #808080;
 }
+
 .table tbody tr td:first-child {
-	border-radius: 8px 0 0 8px;
+  border-radius: 8px 0 0 8px;
 }
+
 .table tbody tr td:last-child {
-	border-radius: 0 8px 8px 0;
+  border-radius: 0 8px 8px 0;
 }
+
 .table__title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
@@ -428,13 +319,12 @@ body {
   border-radius: 10px;
 }
 
-.schedule{
-  grid-area: sched;
+.schedule {
   z-index: 1;
 }
 
 .schedule__inner {
-  background: linear-gradient(#FFFAFA, #808080 );
+  background: linear-gradient(#FFFAFA, #808080);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -462,7 +352,7 @@ body {
   border: 0.8px solid #432b2b;
   border-radius: 5px;
   padding: 10px;
- box-shadow: 10px 7px 7px black;
+  box-shadow: 10px 7px 7px black;
 }
 
 .schedule__date {
@@ -508,260 +398,301 @@ body {
   flex-wrap: wrap;
 }
 
-.footer {
-  background: linear-gradient(#808080, #FFFAFA);
-  min-height: 240px;
-}
+@media (max-width:1250px) {
 
-.footer__links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-}
+  body {
+    min-width: 1250px;
+  }
 
-.nav__footer {
-  margin-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  
-}
+  .fred {
+    width: 200px;
+    height: 600px;
+  }
 
-.nav__inner-footer {
- text-transform: uppercase;
- text-align: center;
-}
+  .nefred {
+    width: 200px;
+    height: 600px;
+  }
 
-.nav__item-footer {
-  margin-bottom: 5px;
-  padding-bottom: 5px;
-  transition: 0.3s;
-}
+  .container {
+    width: 850px;
+  }
 
-.nav__link-footer {
-  color: black;
-  text-decoration: none;
-}
-
-.nav__item-footer:hover {
-  border-bottom: 2px solid #000;
-}
-
-@media (max-width: 414px ) {
-  .wrapper {
-    min-width: 410px;
-    overflow: hidden;
-}
-
-.container {
-    width: 414px;
-}
-.hero {
-  max-height: 680px;
-}
-
-.header__item {
-  margin-left: 30px;
-}
-
-
-.header__item:nth-child(2) {
-  margin-right: 30px;
-}
-
-.logo__pic {
-  width: 80px;
-  height: 80px;
-}
-
-.icon {
-  width: 25px;
-  height: 25px;
-}
-
-.hero__nav {
-  display: none;
-}
-
-.header {
-  padding-top: 25px;
-}
-
-.hamburger-menu {
-  display: block;
-}
-
-.fred {
-  display: none;
-}
-
-.nefred {
-  display: none;
-}
-
-.read__more {
-  left: 155px;
-  top: 285px;
-}
-
-.logo__match {
-  width: 100px;
-  height: 100px;
-}
-
-.match__date {
-  margin-top: 30px;
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-
-.player__photo {
-  width: 210px;
-}
-
-.player__title {
-  font-size: 15px;
-  margin-top: 5px;
-}
-
-.player__article {
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.player__title-second {
-  font-size: 10px;
-}
-
-.player__text {
-  font-size: 8px;
-}
-
-.ronaldo__video {
-  margin-top: 5px;
-  border-radius: 10px;
-  width: 180px;
-  height: 150px;
-  margin-bottom: 15px;
-}
-
-.table {
-	width: 70%;
-	border: none;
-	margin-bottom: 20px;
-  
-}
-
-.table thead th {
-	padding: 7px 7px;
-	font-size: 15px;
-}
-
-.table tbody td {
-	border: none;
-	padding: 5px 5px;
-	font-size: 10px;
-	vertical-align: top;
-  text-align: center;
-}
-
-.schedule__item {
-  padding: 5px;
- box-shadow: 0px 7px 7px black;
-}
-
-.schedule__logos-team {
-  width: 130px;
-}
-}
-
-@media (max-width: 390px) {
-  .wrapper {
-    min-width: 390px;
-    overflow: hidden;
-}
-
-.container {
-    width: 390px;
-}
-
-.ronaldo__video {
-  margin-top: 5px;
-  border-radius: 10px;
-  width: 170px;
-  height: 150px;
-  margin-bottom: 15px;
-}
-}
-
-@media (max-width: 375px) {
-  .wrapper {
-    min-width: 375px;
-    overflow: hidden;
-}
-
-.container {
-    width: 375px;
-}
-
-.menu__btn {
-  left: 35px;
-}
-}
-
-@media (max-width:900px) {
-  .wrapper {
-    min-width: 900px;
-}
-
-.container {
+  .ronaldo__video {
     width: 450px;
+  }
+
+  .read__more {
+    left: 370px;
+    top: 375px;
+  }
 }
 
+@media (max-width: 1050px) {
+  body {
+    min-width: 1050px;
+  }
 
-.player__photo {
-  width: 170px;
-}
-.player__title {
-  font-size: 15px;
-}
+  .fred {
+    width: 150px;
+    height: 550px;
+  }
 
-.player__title-second {
-  font-size: 10px;
-}
+  .nefred {
+    width: 150px;
+    height: 550px;
+  }
 
-.player__text {
-  font-size: 10px;
-}
+  .container {
+    width: 750px;
+  }
 
-.ronaldo__video {
-  width: 200px;
-  height: 150px;
-}
-.read__more {
-  left: 175px;
-  top: 380px;
-}
-.table thead th {
-	font-size: 20px;
-}
+  .ronaldo__video {
+    width: 350px;
+  }
 
-.table tbody td {
-	padding: 5px 5px;
-	font-size: 15px;
+  .read__more {
+    left: 320px;
+  }
 
 }
+
+@media (max-width: 900px) {
+  body {
+    min-width: 900px;
+  }
+
+  .fred {
+    width: 150px;
+    height: 550px;
+  }
+
+  .nefred {
+    width: 150px;
+    height: 550px;
+  }
+
+  .container {
+    width: 600px;
+  }
+
+  .player__photo {
+    width: 210px;
+  }
+
+  .player__title {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .player__article {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .player__title-second {
+    font-size: 15px;
+  }
+
+  .player__text {
+    font-size: 10px;
+  }
+
+  .ronaldo__video {
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+
+  .read__more {
+    left: 250px;
+  }
+
+
 }
 
+@media (max-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+
+  .container {
+    width: 768px;
+  }
+
+  .fred {
+    display: none;
+  }
+
+  .nefred {
+    display: none;
+  }
+
+  .player__photo {
+    width: 210px;
+  }
+
+  .player__title {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .player__article {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .player__title-second {
+    font-size: 15px;
+  }
+
+  .player__text {
+    font-size: 12px;
+  }
+
+  .ronaldo__video {
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+
+  .read__more {
+    left: 330px;
+  }
+
+}
+
+@media (max-width: 414px) {
+
+  body {
+    min-width: 414px;
+  }
+
+  .container {
+    width: 414px;
+  }
 
 
+  .header__item {
+    margin-left: 30px;
+  }
 
 
+  .header__item:nth-child(2) {
+    margin-right: 30px;
+  }
 
+  .logo__pic {
+    width: 80px;
+    height: 80px;
+  }
 
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
 
+  .hero__nav {
+    display: none;
+  }
 
+  .header {
+    padding-top: 25px;
+  }
 
+  .hamburger-menu {
+    display: block;
+  }
 
+  .main {
+    display: block;
+  }
 
+  .fred {
+    display: none;
+  }
+
+  .nefred {
+    display: none;
+  }
+
+  .read__more {
+    left: 155px;
+    top: 275px;
+  }
+
+  .logo__match {
+    width: 100px;
+    height: 100px;
+  }
+
+  .match__date {
+    margin-top: 30px;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .player__photo {
+    width: 210px;
+  }
+
+  .player__title {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .player__article {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .player__title-second {
+    font-size: 10px;
+  }
+
+  .player__text {
+    font-size: 8px;
+  }
+
+  .ronaldo__video {
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 180px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  .table {
+    width: 70%;
+    border: none;
+    margin-bottom: 20px;
+
+  }
+
+  .table thead th {
+    padding: 7px 7px;
+    font-size: 15px;
+  }
+
+  .table tbody td {
+    border: none;
+    padding: 5px 5px;
+    font-size: 10px;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .schedule__item {
+    padding: 5px;
+    box-shadow: 0px 7px 7px black;
+  }
+
+  .schedule__logos-team {
+    width: 130px;
+  }
+
+}

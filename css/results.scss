@@ -1,0 +1,340 @@
+@import "reset.scss";
+@import "foooter.scss";
+@import "header.scss";
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: url('../img/bg/look.com.ua-35320.jpg') center;
+}
+
+.fred {
+  position: sticky;
+  top: 0;
+  left: 0px;
+  width: 250px;
+  height: 750px;
+}
+
+.nefred {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 750px;
+}
+
+.results {
+  background: #C0C0C0;
+  z-index: 1;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.results__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.results__item {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.results__item:nth-child(7) {
+  margin-bottom: 0px;
+}
+
+.results__item:last-child {
+  margin-bottom: 0px;
+}
+
+.results__date {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.results__type {
+  width: 170px;
+  height: 100px;
+}
+
+.results__logos {
+  display: flex;
+  align-items: center;
+}
+
+.results__logos-name {
+  font-size: 20px;
+  text-align: center;
+}
+
+.results__number {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #000;
+  color: #fff;
+}
+
+.results__logos-team {
+  width: 140px;
+}
+
+
+.results__goals-item {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.results__logos-img {
+  margin-left: 5px;
+  width: 20px;
+}
+
+.results__logos-player {
+  font-size: 15px;
+}
+
+.results__goals {
+  align-self: start;
+  display: flex;
+}
+
+.results__goals-right {
+  margin-left: 40px;
+}
+
+@media (max-width: 1250px) {
+  body {
+    min-width: 1250px;
+  }
+
+  .container {
+    width: 850px;
+  }
+
+  .fred {
+    width: 200px;
+    height: 600px;
+  }
+
+  .nefred {
+    width: 200px;
+    height: 600px;
+  }
+
+
+  .logo__pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 1050px) {
+  
+  body {
+    min-width: 1050px;
+  }
+
+  .container {
+    width: 700px;
+  }
+
+  .fred {
+    width: 175px;
+    height: 550px;
+  }
+
+  .nefred {
+    width: 175px;
+    height: 550px;
+  }
+
+
+  .logo__pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .results__inner {
+    display: block;
+  }
+  .results__goals-right {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  body {
+    min-width: 900px;
+  }
+
+  .container {
+    width: 600px;
+  }
+
+  .fred {
+    width: 150px;
+    height: 550px;
+  }
+
+  .nefred {
+    width: 150px;
+    height: 550px;
+  }
+
+
+  .logo__pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .results__inner {
+    display: block;
+  }
+  .results__goals-right {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+
+  .container {
+    width: 768px;
+  }
+  .header {
+    justify-content: center;
+  }
+
+  .logo__pic {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .fred {
+      display: none;
+  }
+
+  .nefred {
+      display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .results__logos-team {
+    width: 137px;
+  }
+  .results {
+    z-index: 0;
+  }
+  .results__item:nth-child(7) {
+    margin-bottom: 10px;
+  }
+  .results__inner {
+    display: block;
+  }
+
+  .results__goals-right {
+    margin-left: 300px;
+  }
+  
+}
+
+@media (max-width: 414px) {
+  body {
+    min-width: 414px;
+  }
+
+  .container {
+    width: 414px;
+  }
+  .header {
+    justify-content: center;
+  }
+
+  .logo__pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .fred {
+      display: none;
+  }
+
+  .nefred {
+      display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .results__inner {
+    display: block;
+  }
+
+  .results__logos-team {
+    width: 137px;
+  }
+  .results {
+    z-index: 0;
+  }
+  .results__item:nth-child(7) {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,367 @@
+@import "reset.scss";
+@import "foooter.scss";
+@import "header.scss";
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: url('../img/bg/look.com.ua-35320.jpg') center;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fred {
+  position: sticky;
+  top: 0;
+  left: 0px;
+  width: 250px;
+  height: 750px;
+}
+
+.nefred {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 750px;
+}
+
+.news__inner {
+  background: linear-gradient(#fff, #FFFAFA);
+}
+
+.news__match {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: url('../img/content/skysports-old-trafford-manchester-united_5461096.jpeg') center center / cover no-repeat;
+}
+
+.match__content {
+  display: flex;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.match__date {
+  margin-top: 70px;
+  color: #F5F5DC;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.match__type {
+  color: #F5F5DC;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.logo__match {
+  width: 150px;
+  height: 150px;
+}
+
+.match__content-numbers {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  color: #F5F5DC;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.match__content-team {
+  background: #fff;
+  color: #B22222;
+  font-size: 25px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px #000;
+}
+
+.news__title {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 40px;
+  color: #B22222;
+}
+
+.news__subtitle {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+.news__article {
+  margin-top: 20px;
+}
+
+.news__text {
+  font-size: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+  line-height: 1.4em;
+  text-align: left;
+}
+
+.news__media {
+  display: grid;
+  grid-template-areas: 'rash criro'
+    'rash team'
+    'degea varan'
+    'pen varan';
+  grid-gap: 5px;
+  box-sizing: border-box;
+}
+
+.img__rashfrod {
+  grid-area: rash;
+  width: 450px;
+  height: 707px;
+}
+
+.img__ronaldo {
+  grid-area: criro;
+  width: 445px;
+  height: 350px;
+}
+
+.img__team {
+  grid-area: team;
+  width: 445px;
+  height: 350px;
+
+}
+
+.img__varan {
+  grid-area: varan;
+  width: 445px;
+  height: 605px;
+}
+
+.img__degea {
+  grid-area: degea;
+  width: 450px;
+  height: 300px;
+}
+
+.img__penalty {
+  grid-area: pen;
+  width: 450px;
+  height: 300px;
+}
+
+.video {
+  margin-top: 5px;
+  width: 900px;
+  height: 500px;
+}
+
+@media (max-width:900px) {
+  body {
+    min-width: 900px;
+  }
+
+  .container {
+    width: 600px;
+  }
+
+  .fred {
+    width: 150px;
+    height: 550px;
+  }
+
+  .nefred {
+    width: 150px;
+    height: 550px;
+  }
+
+
+  .logo__pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+
+  .container {
+    width: 768px;
+  }
+  .header {
+    justify-content: center;
+  }
+
+  .logo__pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .fred {
+      display: none;
+  }
+
+  .nefred {
+      display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .img__rashfrod {
+   
+    width: 380px;
+    height: 611px;
+  }
+  
+  .img__ronaldo {
+    
+    width: 380px;
+    height: 303px;
+  }
+  
+  .img__team {
+    
+    width: 380px;
+    height: 303px;
+  
+  }
+  
+  .img__varan {
+   
+    width: 380px;
+    height: 605px;
+  }
+  
+  .img__degea {
+    
+    width: 380px;
+    height: 300px;
+  }
+  
+  .img__penalty {
+   
+    width: 380px;
+    height: 300px;
+  }
+  
+  .video {
+    margin-top: 5px;
+    width: 768px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 414px) {
+  body {
+    min-width: 414px;
+  }
+
+  .container {
+    width: 414px;
+  }
+  .header {
+    justify-content: center;
+  }
+
+  .logo__pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .fred {
+      display: none;
+  }
+
+  .nefred {
+      display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .news__media {
+    display: block;
+  }
+  .img__rashfrod {
+   
+    width: 414px;
+    height: 707px;
+  }
+  
+  .img__ronaldo {
+    
+    width: 414px;
+    height: 350px;
+  }
+  
+  .img__team {
+    
+    width: 414px;
+    height: 350px;
+  
+  }
+  
+  .img__varan {
+   
+    width: 414px;
+    height: 605px;
+  }
+  
+  .img__degea {
+    
+    width: 414px;
+    height: 300px;
+  }
+  
+  .img__penalty {
+   
+    width: 414px;
+    height: 300px;
+  }
+  
+  .video {
+    margin-top: 5px;
+    width: 414px;
+    height: 300px;
+  }
+}

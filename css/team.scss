@@ -1,0 +1,378 @@
+@import "reset.scss";
+@import "foooter.scss";
+@import "header.scss";
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: url('../img/bg/look.com.ua-35320.jpg') center;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.fred {
+    position: sticky;
+    top: 0;
+    left: 0px;
+    width: 250px;
+    height: 750px;
+}
+
+.nefred {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 750px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team {
+    background: url(../img/content/pole1.jpeg) 100% 10% / cover no-repeat;
+}
+
+.team__gk {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    position: relative;
+}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.char {
+    background: linear-gradient(#B22222, #000);
+    border-radius: 10px;
+}
+
+.photo__player {
+    width: 100px;
+}
+
+.char__item {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.team__defs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team__item-scot {
+    position: absolute;
+    left: 645px;
+    top: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__semi-defs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bench__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.bench__team {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.team__title {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    background: linear-gradient(#B22222, #000);
+}
+
+.bench__title {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    background: linear-gradient(#B22222, #000);
+}
+
+.bench__inner {
+    .team__item {
+        margin-right: 30px;
+    }
+.nav__footer:first-child {
+    margin-left: 0;
+}
+}
+
+@media (max-width: 1900px) {
+    .team__item-scot {
+        left: 895px;
+        top: 465px;
+    }    
+}
+
+@media (max-width: 1700px) {
+    .team__item-scot {
+        left: 795px;
+        top: 465px;
+    }    
+}
+
+@media (max-width: 1500px) {
+    .team__item-scot {
+        left: 695px;
+        top: 465px;
+    }    
+}
+
+@media (max-width: 1250px) {
+    body {
+        min-width: 1250px;
+      }
+    
+      .container {
+        width: 800px;
+      }
+    
+      .fred {
+        width: 200px;
+        height: 600px;
+      }
+    
+      .nefred {
+        width: 200px;
+        height: 600px;
+      }
+
+      .team__item-scot {
+        left: 565px;
+        top: 465px;
+        
+    }
+    .team {
+        background: url(../img/content/pole1.jpeg) 50% 10% / cover no-repeat;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    body {
+        min-width: 1050px;
+      }
+    
+      .container {
+        width: 700px;
+      }
+    
+      .fred {
+        width: 200px;
+        height: 600px;
+      }
+    
+      .nefred {
+        width: 200px;
+        height: 600px;
+      }
+    
+
+      .team {
+        background: url(../img/content/pole1.jpeg) 50% 10% / cover no-repeat;
+    }
+
+    .photo__player {
+        width: 80px;
+    }
+
+    .team__item-scot {
+        left: 510px;
+        top: 400px;
+        
+    }
+
+    .char__item {
+        font-size: 15px;
+    }
+
+    
+}
+
+@media (max-width: 900px) {
+    
+    
+      body {
+        min-width: 900px;
+      }
+    
+      .container {
+        width: 600px;
+      }
+    
+      .fred {
+        width: 150px;
+        height: 550px;
+      }
+    
+      .nefred {
+        width: 150px;
+        height: 550px;
+      }
+    
+    
+      .logo__pic {
+        width: 100px;
+        height: 100px;
+      }
+    
+      .icon {
+        height: 40px;
+        width: 40px;
+      }
+
+      .team {
+        background: url(../img/content/pole1.jpeg) 50% 10% / cover no-repeat;
+    }
+
+    .photo__player {
+        width: 70px;
+    }
+
+    .team__item-scot {
+        left: 410px;
+        top: 350px;
+        
+    }
+
+    .char__item {
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    body {
+        min-width: 768px;
+      }
+    
+      .container {
+        width: 768px;
+      }
+      .header {
+        justify-content: center;
+      }
+    
+      .logo__pic {
+        width: 100px;
+        height: 100px;
+      }
+    
+      .icon {
+        height: 40px;
+        width: 40px;
+      }
+
+      .fred {
+          display: none;
+      }
+
+      .nefred {
+          display: none;
+      }
+    
+      .header__nav {
+        display: none;
+      }
+      .hamburger-menu {
+        display: block;
+      }
+
+      .photo__player {
+        width: 80px;
+    }
+
+    .char__item {
+        font-size: 15px;
+    }
+
+    .team {
+        background: url(../img/content/pole1.jpeg) 50% 10% / cover no-repeat;
+    }
+
+    .team__item-scot {
+        left: 345px;
+        top: 370px;
+        
+    }
+}
+
+@media (max-width:414px) {
+    body {
+        min-width: 414px;
+      }
+    
+      .container {
+        width: 414px;
+      }
+      .header {
+        justify-content: center;
+      }
+    
+      .logo__pic {
+        width: 70px;
+        height: 70px;
+      }
+    
+      .icon {
+        height: 25px;
+        width: 25px;
+      }
+
+      .fred {
+          display: none;
+      }
+
+      .nefred {
+          display: none;
+      }
+    
+      .header__nav {
+        display: none;
+      }
+      .hamburger-menu {
+        display: block;
+      }
+
+      .photo__player {
+        width: 70px;
+    }
+
+    .char__item {
+        font-size: 12px;
+    }
+
+    .team {
+        background: url(../img/content/pole1.jpeg) 50% 10% / cover no-repeat;
+    }
+
+    .team__item-scot {
+        left: 170px;
+        top: 310px;
+        
+    }
+}
