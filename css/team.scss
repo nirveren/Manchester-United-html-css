@@ -34,7 +34,7 @@ body {
 }
 
 .team {
-    background: url(../img/content/pole1.jpeg) 100% 10% / cover no-repeat;
+    background: url(../img/content/pole1.jpeg) 45% -5% / cover no-repeat;
 }
 
 .team__gk {
@@ -70,14 +70,6 @@ body {
     justify-content: space-evenly;
 }
 
-.team__item-scot {
-    position: absolute;
-    left: 645px;
-    top: 470px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .team__semi-defs {
     margin-top: 20px;
@@ -121,26 +113,60 @@ body {
 }
 }
 
-@media (max-width: 1900px) {
-    .team__item-scot {
-        left: 895px;
-        top: 465px;
-    }    
-}
+  .img__team {
+    
+    width: 380px;
+    height: 303px;
+  
+  }
+  
+  .img__varan {
+   
+    width: 380px;
+    height: 605px;
+  }
+  
+  .img__degea {
+    
+    width: 380px;
+    height: 300px;
+  }
+  
+  .img__penalty {
+   
+    width: 380px;
+    height: 300px;
+  }
+  
+  .video {
+    margin-top: 5px;
+    width: 768px;
+    height: 350px;
+  }
 
-@media (max-width: 1700px) {
-    .team__item-scot {
-        left: 795px;
-        top: 465px;
-    }    
-}
+  @media (min-width: 1700px) {
+    .body {
+      min-width: 1700px;
+    }
+    .fred {
+      width: 375px;
+      height: 950px;
+    }
+    .nefred {
+      width: 375px;
+      height: 950px;
+    }
 
-@media (max-width: 1500px) {
     .team__item-scot {
-        left: 695px;
-        top: 465px;
-    }    
-}
+      left: 850px;
+      top: 465px;
+      
+  }
+    
+    .container {
+      width: 950px;
+    }
+  }
 
 @media (max-width: 1250px) {
     body {

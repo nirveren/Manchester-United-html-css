@@ -147,8 +147,8 @@ input, select {
   display: block;
   position: absolute;
   width: 100%;
-  height: 2px;
-  background-color: #fff;
+  height: 2.5px;
+  background-color: #B22222;
 }
 
 .menu__btn > span::before {
@@ -174,15 +174,13 @@ input, select {
   list-style: none;
   text-align: center;
   background-color: #000;
-  -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: #333;
+  color: #B22222;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -519,54 +517,42 @@ body {
   height: 500px;
 }
 
-@media (max-width: 1250px) {
-  body {
-    min-width: 1250px;
-  }
-  .container {
-    width: 805px;
+@media (min-width: 1700px) {
+  .body {
+    min-width: 1700px;
   }
   .fred {
-    width: 200px;
-    height: 650px;
+    width: 375px;
+    height: 950px;
   }
   .nefred {
-    width: 200px;
-    height: 650px;
+    width: 375px;
+    height: 950px;
   }
-  .logo__pic {
-    width: 100px;
-    height: 100px;
-  }
-  .icon {
-    height: 40px;
-    width: 40px;
+  .container {
+    width: 950px;
   }
   .img__rashfrod {
-    width: 400px;
-    
+    width: 475px;
   }
   .img__ronaldo {
-    width: 400px;
-   
+    width: 470px;
   }
   .img__team {
-    width: 400px;
-    
+    width: 470px;
   }
   .img__varan {
-    width: 400px;
-    
+    width: 470px;
   }
   .img__degea {
-    width: 400px;
+    width: 475px;
   }
   .img__penalty {
-    width: 400px;
+    width: 475px;
   }
   .video {
-    margin-top: 5px;
-    width: 805px;
+    width: 950px;
+    height: 450px;
   }
 }
 
@@ -575,51 +561,18 @@ body {
     min-width: 1050px;
   }
   .container {
-    width: 705px;
+    width: 700px;
+  }
+  .container {
+    width: 700px;
   }
   .fred {
-    width: 200px;
-    height: 600px;
+    width: 175px;
+    height: 550px;
   }
   .nefred {
-    width: 200px;
-    height: 600px;
-  }
-  .logo__pic {
-    width: 150px;
-    height: 150px;
-  }
-  .icon {
-    height: 40px;
-    width: 40px;
-  }
-  .img__rashfrod {
-    width: 350px;
-    
-  }
-  .img__ronaldo {
-    width: 350px;
-    
-  }
-  .img__team {
-    width: 350px;
-   
-  }
-  .img__varan {
-    width: 350px;
-    
-  }
-  .img__degea {
-    width: 350px;
-    
-  }
-  .img__penalty {
-    width: 350px;
-   
-  }
-  .video {
-    width: 700px;
-    
+    width: 175px;
+    height: 550px;
   }
 }
 
@@ -628,7 +581,7 @@ body {
     min-width: 900px;
   }
   .container {
-    width: 605px;
+    width: 600px;
   }
   .fred {
     width: 150px;
@@ -645,35 +598,6 @@ body {
   .icon {
     height: 40px;
     width: 40px;
-  }
-  .img__rashfrod {
-    width: 300px;
-    height: 611px;
-  }
-  .img__ronaldo {
-    width: 300px;
-    height: 303px;
-  }
-  .img__team {
-    width: 300px;
-    height: 303px;
-  }
-  .img__varan {
-    width: 300px;
-    height: 605px;
-  }
-  .img__degea {
-    width: 300px;
-    height: 300px;
-  }
-  .img__penalty {
-    width: 300px;
-    height: 300px;
-  }
-  .video {
-    margin-top: 5px;
-    width: 600px;
-    height: 350px;
   }
 }
 

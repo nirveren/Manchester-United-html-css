@@ -170,6 +170,79 @@ body {
   height: 500px;
 }
 
+@media (min-width: 1700px) {
+  .body {
+    min-width: 1700px;
+  }
+  .fred {
+    width: 375px;
+    height: 950px;
+  }
+  .nefred {
+    width: 375px;
+    height: 950px;
+  }
+  
+  .container {
+    width: 950px;
+  }
+
+  .img__rashfrod {
+   
+    width: 475px;
+  }
+  
+  .img__ronaldo {
+    width: 470px;
+  }
+
+  .img__team {
+    width: 470px;
+  }
+  
+  .img__varan {
+    width: 470px;
+  }
+  
+  .img__degea {
+    width: 475px;
+  }
+  
+  .img__penalty {
+    width: 475px;
+  }
+  
+  .video {
+    width: 950px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1050px) {
+  body {
+    min-width: 1050px;
+  }
+
+  .container {
+    width: 700px;
+  }
+
+  .container {
+    width: 700px;
+  }
+
+  .fred {
+    width: 175px;
+    height: 550px;
+  }
+
+  .nefred {
+    width: 175px;
+    height: 550px;
+  }
+
+}
+
 @media (max-width:900px) {
   body {
     min-width: 900px;

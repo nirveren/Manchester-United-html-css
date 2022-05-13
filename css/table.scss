@@ -163,6 +163,27 @@ body {
   background-color: #B22222;
 }
 
+@media (min-width: 1700px) {
+  .body {
+    min-width: 1700px;
+  }
+  .fred {
+    width: 375px;
+    height: 950px;
+  }
+  .nefred {
+    width: 375px;
+    height: 950px;
+  }
+  .table {
+    width: 900px;
+  }
+
+  .container {
+    width: 950px;
+  }
+}
+
 @media (max-width: 1250px) {
   body {
     min-width: 1250px;

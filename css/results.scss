@@ -122,6 +122,23 @@ body {
   margin-left: 40px;
 }
 
+@media (min-width: 1700px) {
+  .body {
+    min-width: 1700px;
+  }
+  .fred {
+    width: 375px;
+    height: 950px;
+  }
+  .nefred {
+    width: 375px;
+    height: 950px;
+  }
+  .container {
+    width: 950px;
+  }
+}
+
 @media (max-width: 1250px) {
   body {
     min-width: 1250px;
@@ -336,5 +353,8 @@ body {
   }
   .results__item:nth-child(7) {
     margin-bottom: 10px;
+  }
+  .results__goals-right {
+    margin-left: 20px;
   }
 }
